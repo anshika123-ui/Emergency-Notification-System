@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Notification System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>HIGH ALERT !!!</h1>
+        </header>
+
+        <div class="dashboard">
+            <!-- Send Alert Form Section -->
+            <section class="alert-form">
+                <h2>Send Alert Message</h2>
+                <form>
+                    <label for="message">Alert Message:</label>
+                    <textarea id="message" rows="4" required></textarea>
+                    
+                    <label for="location">Target Location:</label>
+                    <input type="text" id="location" placeholder="City/Area" required>
+                    
+                    <button type="submit" class="submit-btn">Send Notification</button>
+                </form>
+            </section>
+
+            <!-- Sent Notifications Table Section -->
+            <section class="sent-notifications">
+                <h2>Sent Notifications</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Message</th>
+                            <th>Location</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Earthquake Warning</td>
+                            <td>California</td>
+                            <td>Delivered</td>
+                        </tr>
+                        <tr>
+                            <td>Droughts</td>
+                            <td>India</td>
+                            <td>Failed</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+
+           
+</body>
+</html>

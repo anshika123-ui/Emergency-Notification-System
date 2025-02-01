@@ -1,0 +1,139 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: url('https://cdn.prod.website-files.com/654fd3ad88635290d9845b9e/65b39f7d820d1a9f09b3704b_6525256482c9e9a06c7a9d3c%252F65a9b678cd4595302eb1dc21_background-image-3.webp') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    min-height: 100vh;
+    background-attachment: fixed;
+    padding: 20px;
+}
+
+/* Container and Layout */
+.container {
+    width: 50%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+h1 {
+    font-size: 3em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    color: #FF0000; /* Red color for high alert */
+}
+
+/* Dashboard */
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Form Styling */
+.alert-form {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.alert-form h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.alert-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.alert-form label {
+    font-size: 1.2em;
+}
+
+.alert-form textarea, .alert-form input {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.alert-form textarea {
+    resize: vertical;
+}
+
+.alert-form button {
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.alert-form button:hover {
+    background-color: #45a049;
+}
+
+/* Sent Notifications Table Styling */
+.sent-notifications {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.sent-notifications h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #050505;
+}
+
+table th {
+    background-color: #333;
+}
+
+table tr:nth-child(even) {
+    background-color: #070707;
+}
+
+table tr:nth-child(odd) {
+    background-color: #060606;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+    .dashboard {
+        flex-direction: column;
+    }
+
+    table {
+        font-size: 0.9em;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+}

@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: url('https://media.istockphoto.com/id/1333043586/photo/tornado-in-stormy-landscape-climate-change-and-natural-disaster-concept.jpg?s=612x612&w=0&k=20&c=uo4HoloU79NEle1-rgVoLhKBE-RrfPSeinKAdczCo2I=') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    min-height: 100vh;
+}
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Container and Layout */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+.dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+input, textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+}
+textarea {
+    resize: vertical;
+}
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: rgb(10, 10, 10);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #45a049;
+}
+
+/* Sent Notifications Table */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #0b0b0b;
+}
+table th {
+    background-color: #333;
+}
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Section Styling */
+section {
+    flex: 1;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
